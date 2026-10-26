@@ -3,39 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Portfolio Shivesh Ramdhan</title>
+    <meta name="theme-color" content="#070b17">
+    <meta name="description" content="Het portfolio van Shivesh Ramdhan, software development student in Rotterdam.">
+    <title>Shivesh Ramdhan | Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="home-page">
     <div class="site-shell">
         <header class="site-header">
-            <a class="logo-link" href="index.html" aria-label="Home">
-                <img src="images/logo.png" alt="Logo van Shivesh Ramdhan">
+            <a class="brand" href="#home" aria-label="Shivesh Ramdhan, home">
+                <span class="brand-mark" aria-hidden="true">SR</span>
+                <span>Shivesh Ramdhan</span>
             </a>
             <nav class="site-nav" aria-label="Hoofdnavigatie">
-                <a href="index.html">home</a>
-                <a href="projects.html">works</a>
-                <a href="over-mij.html">about me</a>
+                <a class="active" href="#home">Home</a>
+                <a href="#over-mij">Over mij</a>
+                <a href="#vaardigheden">Vaardigheden</a>
+                <a href="#projecten">Projecten</a>
+                <a href="#contact">Contact</a>
             </nav>
-            <a class="header-contact" href="contact.html">make a call</a>
+            <button class="theme-toggle" type="button" aria-label="Schakel licht thema in" title="Thema wisselen">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"></path></svg>
+            </button>
         </header>
 
-        <main class="page-main home-main">
-            <section class="home-left" aria-label="Introductie">
-                <div class="intro">
-                    <p>Hello i am SHIVESH</p>
-                    <p>meer informatie over mij</p>
+        <main>
+            <section class="hero section-wrap" id="home">
+                <div class="hero-copy">
+                    <span class="eyebrow"><span class="status-dot"></span> Hallo, ik ben</span>
+                    <h1>Shivesh <span>Ramdhan</span></h1>
+                    <p class="hero-role">Software Development Student</p>
+                    <p class="hero-description">Ik ben een tweedejaars Software Development student bij TCR in Rotterdam. Ik werk graag met technologie, los graag problemen op en wil mezelf blijven ontwikkelen in de wereld van IT.</p>
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#contact">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"></path><path d="m3 7 9 7 9-7"></path></svg>
+                            Neem contact op
+                        </a>
+                        <a class="button button-outline" href="#projecten">Bekijk mijn projecten <span aria-hidden="true">→</span></a>
+                    </div>
+                </div>
+                <div class="hero-art" aria-label="Creatieve code en ontwikkeling">
+                    <div class="hero-glow"></div>
+                    <div class="code-window">
+                        <div class="window-top"><span></span><span></span><span></span><b>portfolio.js</b></div>
+                        <pre><span class="code-purple">const</span> developer = {
+  name: <span class="code-green">'Shivesh'</span>,
+  location: <span class="code-green">'Rotterdam'</span>,
+  skills: [<span class="code-green">'HTML'</span>, <span class="code-green">'CSS'</span>],
+  learning: <span class="code-blue">'every day'</span>
+};</pre>
+                    </div>
+                    <div class="portrait-art"><img class="portrait-photo" src="images/shivesh-portrait.png" alt="Shivesh Ramdhan zittend op een stoel"></div>
+                    <div class="hero-floating-tag tag-code"><span>&lt;/&gt;</span><small>CODE</small></div>
+                    <div class="hero-floating-tag tag-build"><span>✳</span><small>BUILD</small></div>
+                    <p class="hero-side-note">Code<br>Build<br>Improve</p>
                 </div>
             </section>
-            <section class="home-right" aria-label="Vaardigheden">
-                <div class="star react"><img src="images/react.png" alt="React"></div>
-                <div class="star css"><img src="images/CSS.jpg" alt="CSS"></div>
-                <div class="star html"><img src="images/HTML.png" alt="HTML"></div>
-                <div class="star javascript"><img src="images/JAVASCRIPT.png" alt="JavaScript"></div>
+
+            <section class="about-section section-wrap section-divider" id="over-mij">
+                <div class="profile-art">
+                    <img class="profile-photo" src="images/shivesh-portrait.png" alt="Shivesh Ramdhan zittend op een stoel">
+                    <span class="profile-caption">Software Developer in opleiding</span>
+                </div>
+                <div class="about-copy">
+                    <h2>Over mij</h2>
+                    <span class="heading-accent"></span>
+                    <p>Mijn naam is Shivesh Ramdhan en ik ben een tweedejaars Software Development student bij TCR in Rotterdam. Ik ben geïnteresseerd in het maken van websites, apps en het bouwen van goede en gebruiksvriendelijke oplossingen.</p>
+                    <p>In mijn vrije tijd ben ik bezig met auto's, scooters, gamen en ik vind het leuk om nieuwe dingen te leren. Mijn doel is om in de toekomst projectleider te worden in de IT.</p>
+                    <a class="button button-outline button-small" href="over-mij.html">Meer over mij <span aria-hidden="true">→</span></a>
+                </div>
+                <dl class="facts-card">
+                    <div><dt><span class="fact-icon">♙</span>Naam</dt><dd>Shivesh Ramdhan</dd></div>
+                    <div><dt><span class="fact-icon">▦</span>Leeftijd</dt><dd>17 jaar</dd></div>
+                    <div><dt><span class="fact-icon">◇</span>Opleiding</dt><dd>Software Development (TCR)</dd></div>
+                    <div><dt><span class="fact-icon">⌖</span>Woonplaats</dt><dd>Rotterdam</dd></div>
+                    <div><dt><span class="fact-icon">◎</span>Doel</dt><dd>Projectleider</dd></div>
+                </dl>
+            </section>
+
+            <section class="skills-section section-wrap section-divider" id="vaardigheden">
+                <div class="section-heading">
+                    <h2>Vaardigheden</h2>
+                    <p>De tools en talen die ik gebruik en leer.</p>
+                </div>
+                <div class="skills-grid">
+                    <article class="skill-card"><img src="images/HTML.png" alt=""><span>HTML</span></article>
+                    <article class="skill-card"><img src="images/CSS.jpg" alt=""><span>CSS</span></article>
+                    <article class="skill-card"><span class="skill-letter js-letter" aria-hidden="true">JS</span><span>JavaScript</span></article>
+                    <article class="skill-card"><span class="skill-letter php-letter" aria-hidden="true">php</span><span>PHP</span></article>
+                    <article class="skill-card"><span class="skill-letter mysql-letter" aria-hidden="true">⌁</span><span>MySQL</span></article>
+                    <article class="skill-card"><span class="skill-letter vscode-letter" aria-hidden="true">‹/›</span><span>VS Code</span></article>
+                </div>
+            </section>
+
+            <section class="projects-section section-wrap section-divider" id="projecten">
+                <div class="section-heading">
+                    <h2>Projecten</h2>
+                    <p>Een paar voorbeelden van wat ik heb gemaakt.</p>
+                </div>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <div class="project-preview healthcare-preview" aria-label="Voorbeeld van een website voor gezondheidszorg">
+                            <div class="preview-nav"><b>✳ Health for All</b><span>About&nbsp;&nbsp; Services&nbsp;&nbsp; Contact</span><i>Donate</i></div>
+                            <div class="healthcare-content"><small>BETTER HEALTHCARE<br>FOR A BRIGHTER FUTURE</small><span>Care that puts<br><b>you first.</b></span><i></i></div>
+                        </div>
+                        <h3>India Healthcare Website</h3>
+                        <p>Website over de gezondheidszorg in India.<br>Met een donatie-, vrijwilligers- en informatiegedeelte.</p>
+                        <a href="#contact">Bekijk project <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-preview bakery-preview" aria-label="Voorbeeld van een website voor een bakkerij">
+                            <div class="preview-nav bakery-nav"><b>♨ Bread Company</b><span>Home&nbsp;&nbsp; Menu&nbsp;&nbsp; Our story</span><i>Order online</i></div>
+                            <div class="bakery-content"><small>FRESHLY BAKED, EVERY DAY</small><b>Good bread.<br>Good company.</b><span>Artisan bread made with love.</span></div>
+                        </div>
+                        <h3>Bread Company</h3>
+                        <p>Website voor een lokale bakkerij.<br>Met een admin-gedeelte en database.</p>
+                        <a href="#contact">Bekijk project <span aria-hidden="true">→</span></a>
+                    </article>
+                    <article class="project-card code-project">
+                        <div class="code-preview">
+                            <div class="code-preview-title">Voorbeeld code (JavaScript) <b>JS</b></div>
+                            <div class="code-dots"><i></i><i></i><i></i></div>
+                            <pre><span>const</span> button = document
+  .querySelector(<em>'.btn'</em>);
+
+button.addEventListener(<em>'click'</em>, () =&gt; {
+  alert(<em>'Hallo! Bedankt voor je bezoek!'</em>);
+});</pre>
+                        </div>
+                        <h3>Interactieve websites</h3>
+                        <p>Kleine interactieve onderdelen gemaakt met JavaScript.</p>
+                        <a href="#vaardigheden">Mijn vaardigheden <span aria-hidden="true">→</span></a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="contact-section section-wrap section-divider" id="contact">
+                <div class="section-heading">
+                    <h2>Contact</h2>
+                    <p>Heb je een vraag of wil je samenwerken? Stuur me gerust een bericht!</p>
+                </div>
+                <div class="contact-row">
+                    <a class="contact-detail" href="mailto:shiveshramdhan93@gmail.com"><span class="contact-icon">✉</span><span><b>shiveshramdhan93@gmail.com</b><small>Stuur me een e-mail</small></span></a>
+                    <div class="contact-detail"><span class="contact-icon">⌖</span><span><b>Rotterdam</b><small>Woonplaats</small></span></div>
+                    <a class="contact-detail" href="https://www.linkedin.com/in/shivesh-ramdhan-9346062a3/?isSelfProfile=true" target="_blank" rel="noreferrer"><span class="contact-icon linkedin-icon">in</span><span><b>LinkedIn</b><small>Bekijk mijn profiel</small></span></a>
+                    <a class="button button-primary contact-button" href="mailto:shiveshramdhan93@gmail.com">Stuur een bericht <span aria-hidden="true">✉</span></a>
+                </div>
             </section>
         </main>
 
-        <footer class="site-footer"></footer>
+        <footer class="site-footer">
+            <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">SR</span><span>Shivesh Ramdhan</span></a>
+            <p>© 2025 Shivesh Ramdhan&nbsp; | &nbsp;Portfolio</p>
+        </footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
