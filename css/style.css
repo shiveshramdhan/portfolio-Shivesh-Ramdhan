@@ -821,7 +821,55 @@ h1 span {
 .code-preview pre span { color: #d46aff; }
 .code-preview pre em { color: #f6a16e; font-style: normal; }
 
-.code-project h3 { margin-top: 7px; }
+.ouderavond-preview {
+    background: #f8f9fb;
+    color: #222;
+}
+
+.ouderavond-nav {
+    display: flex;
+    height: 25px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 9px;
+    background: #fff;
+    color: #333;
+    font-size: 5px;
+}
+
+.ouderavond-nav b {
+    color: #0078d7;
+    font-size: 6px;
+}
+
+.ouderavond-content {
+    display: flex;
+    height: calc(100% - 25px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    background: #f8f9fb;
+    text-align: center;
+}
+
+.ouderavond-content small {
+    color: #0078d7;
+    font-size: 5px;
+    font-weight: 700;
+    letter-spacing: .4px;
+}
+
+.ouderavond-content b {
+    color: #111;
+    font-family: 'Outfit', sans-serif;
+    font-size: 11px;
+    line-height: 1.15;
+}
+
+.ouderavond-project h3 { margin-top: 7px; }
 
 .contact-section {
     padding-top: 18px;
